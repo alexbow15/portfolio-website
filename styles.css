@@ -1,0 +1,437 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  border: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  background-color: rgb(62, 62, 62);
+  color: white;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+/* Homepage */
+#welcome-section {
+  text-align: center;
+  width: 100%;
+  height: 650px;
+  color: white;
+  border: solid;
+  border-bottom: solid rgb(223, 58, 58);
+  border-left: solid black;
+  border-right: solid black;
+  background-image: url(typing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.name {
+  font-size: 75px;
+  margin-bottom: 0;
+  padding-top: 60px;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 30px;
+}
+
+/* Navigation bar */
+#navbar {
+  background-color: rgb(223, 58, 58);
+  height: 50px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  position: fixed;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+#navbar ul li {
+  margin: 5px;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+#navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+#navbar ul li a:visited {
+  color: white;
+}
+
+.about-header {
+  padding-bottom: 5px;
+  text-decoration: underline;
+  text-decoration-color: rgb(223, 58, 58);
+  border-right: 50px;
+}
+
+/* About me */
+#about-me {
+  color: white;
+  padding: 50px 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+.about-top,
+.about-bottom {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+}
+
+.portrait,
+.crest {
+  height: 250px;
+  width: 250px;
+  border-radius: 125px;
+  border: 3px solid rgb(223, 58, 58);
+}
+
+.description {
+  width: 350px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+.portrait {
+  margin-right: 80px;
+}
+
+.crest {
+  margin-left: 30px;
+}
+
+/* Projects % Certifications*/
+#projects,
+#certifications {
+  padding: 70px 20px;
+  margin: -50px 50px;
+}
+
+.projects-header,
+.certifications-header,
+.about-header {
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: rgb(223, 58, 58);
+}
+
+.div-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.projects-container,
+.certifications-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-tile,
+.certifications-tile {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.project-tile:hover,
+.certifications-tile:hover {
+  transform: scale(1.05);
+}
+
+.project-tile a,
+.certifications-tile a {
+  text-decoration: none;
+  color: white;
+}
+
+.project-image,
+.certifications-image {
+  max-width: 100%;
+  height: 200px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.project-description,
+.certifications-description {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Contacts */
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-header {
+  font: white;
+  text-decoration: underline;
+  text-decoration-color: rgb(223, 58, 58);
+  padding-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid rgb(223, 58, 58);
+}
+
+.contact-container {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  align-items: center;
+}
+
+.contact-info p a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-info p {
+  margin: 17px 0;
+  font-size: 20px;
+}
+
+.contact-info p:hover {
+  background-color: rgb(223, 58, 58);
+}
+
+.contact-info p a:visited {
+  color: white;
+}
+
+.contact-info,
+.contact-form-container {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+  position: relative;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+label {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgb(223, 58, 58);
+  color: white;
+  outline: none;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.form-group:last-of-type {
+  padding-bottom: 10px;
+}
+
+#submit {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  border: 2px solid rgb(223, 58, 58);
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  justify-content: center;
+  margin: 0 75px;
+}
+
+#submit:hover {
+  background-color: rgb(223, 58, 58);
+}
+
+.contact-info p {
+  border: 2px solid rgb(223, 58, 58);
+  padding: 10px 0;
+  width: 150px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-socials {
+  margin: 10px 0;
+}
+
+.footer-socials a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 25px;
+  transition: transform 0.3s ease;
+}
+
+.footer-socials .sr-only {
+  position: absolute;
+  left: -9999px;
+}
+
+/* For tablets and mobile devices (portrait and landscape) */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .portrait,
+  .crest {
+    height: 150px;
+    width: 150px;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #welcome-section {
+    height: 400px;
+  }
+
+  .project-tile,
+  .certifications-tile {
+    max-width: 100%;
+  }
+
+  .contact-info {
+    border-right: none;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #submit {
+    width: 100%;
+  }
+}
+
+/* For larger devices like desktops */
+@media (min-width: 769px) {
+  /* Adjustments for larger screens */
+  .about-top,
+  .about-bottom {
+    flex-direction: row;
+  }
+
+  .portrait,
+  .crest {
+    height: 250px;
+    width: 250px;
+  }
+
+  .description {
+    width: 350px;
+    font-size: 18px;
+  }
+
+  #welcome-section {
+    height: 650px;
+  }
+}
