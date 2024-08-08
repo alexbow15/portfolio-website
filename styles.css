@@ -33,7 +33,7 @@ body {
   background-image: url(typing.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .name {
@@ -383,11 +383,21 @@ footer {
   .about-top {
     flex-direction: column;
     text-align: center;
+    padding: 0;
   }
 
   .about-bottom {
     flex-direction: column-reverse;
     text-align: center;
+    padding: 0;
+  }
+
+  .about-top p {
+    font-size: 14px;
+  }
+
+  .about-bottom p {
+    font-size: 14px;
   }
 
   .portrait,
@@ -441,7 +451,8 @@ footer {
 
   .portrait,
   .crest {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 }
+
