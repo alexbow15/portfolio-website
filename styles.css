@@ -33,6 +33,7 @@ body {
   background-image: url(typing.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .name {
