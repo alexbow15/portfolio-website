@@ -412,26 +412,43 @@ footer {
   }
 }
 
-/* For larger devices like desktops */
-@media (min-width: 769px) {
-  /* Adjustments for larger screens */
+/* Media Queries for Mobile Devices */
+@media only screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .about-top,
   .about-bottom {
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
   }
 
   .portrait,
   .crest {
-    height: 250px;
-    width: 250px;
+    margin: 20px 0;
   }
 
   .description {
-    width: 350px;
-    font-size: 18px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: justify;
   }
 
   #welcome-section {
     height: 650px;
+  }
+
+  #navbar ul li a {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .tagline {
+    font-size: 18px;
   }
 }
